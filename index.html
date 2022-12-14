@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scales=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--  引入swiper插件的css-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!--  <link rel="stylesheet" href="css/swiper.min.css">-->
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+    <!--  引入swiper插件的js-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        window.onload = function () {
+            (function () {
+
+                    var swiper = new Swiper(".mySwiper", {
+                        effect: 'coverflow',
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        loop: true,
+                        normalizeSlideIndex: false, //关闭标准化的Slide 索引
+                        // pagination: {
+                        //     el: ".swiper-pagination",
+                        //     clickable: true,
+                        // },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                    });
+                }
+
+            )();
+
+            (function () {
+                var swiper = new Swiper(".mySwiper1", {
+                    slidesPerView: 2.5,
+                    spaceBetween: 10,
+                    // pagination: {
+                    //     el: ".swiper-pagination",
+                    //     clickable: true,
+                    // },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    // breakpoints: {
+                    //     "@0.00": {
+                    //         slidesPerView: 1,
+                    //         spaceBetween: 10,
+                    //     },
+                    //     "@0.75": {
+                    //         slidesPerView: 2,
+                    //         spaceBetween: 20,
+                    //     },
+                    //     "@1.00": {
+                    //         slidesPerView: 3,
+                    //         spaceBetween: 40,
+                    //     },
+                    //     "@1.50": {
+                    //         slidesPerView: 4,
+                    //         spaceBetween: 50,
+                    //     },
+                    // },
+                });
+            })();
+
+        }
+    </script>
+    <title>zwz部署测试</title>
+</head>
+<body>
+<!--第一部分-->
+<section>
+    <header>
+        github静态网页部署测试221213
+        createbranchtest
+    </header>
+    <nav class="nav">
+        <a href="#"><img src="icons/icon1.png" alt=""><span>HR面试</span></a>
+        <a href="#"><img src="icons/icon2.png" alt=""><span>笔试</span></a>
+        <a href="#"><img src="icons/icon3.png" alt=""><span>技术面试</span></a>
+        <a href="#"><img src="icons/icon4.png" alt=""><span>模拟面试</span></a>
+        <a href="#"><img src="icons/icon5.png" alt=""><span>面试技巧</span></a>
+        <a href="#"><img src="icons/icon6.png" alt=""><span>薪资查询</span></a>
+    </nav>
+    <div class="go"><img src="images/go.png" alt=""></div>
+</section>
+<!--第二部分-->
+<section class="content">
+    <div class="content_hd">
+        <img src="icons/i2.png" alt="">
+        <h2>就业指导</h2>
+        <a href="#"><span>更多</span></a>
+    </div>
+    <div class="content_bd">
+        <!--在swiper官网（对应版本的demo)里面复制需要的样式结构代码-->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/pic.png" alt="">
+                        <p>老师教你面试技巧1111</p>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/pic.png" alt="">
+                        <p>老师教你面试技巧22222</p>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/pic.png" alt="">
+                        <p>老师教你面试技巧33333</p>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/pic.png" alt="">
+                        <p>老师教你面试技巧4444</p>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!--            <div class="swiper-pagination"></div>-->
+        </div>
+    </div>
+</section>
+<!--第三部分-->
+<section class="content">
+    <div class="content_hd">
+        <img src="icons/i1.png" alt="">
+        <h2>充电学习</h2>
+        <a href="#"><span>更多</span></a>
+    </div>
+    <div class="study_bd">
+        <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/pic1.png" alt="">
+                        <p>说地道英语，告别中式英语</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/pic2.png" alt="">
+                        <p>思维攻略金字塔思维提升写作</p>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/pic1.png" alt="">
+                        <p>test</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/pic2.png" alt="">
+                        <p>test</p>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/pic1.png" alt="">
+                        <p>test</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/pic2.png" alt="">
+                        <p>test</p>
+                    </a>
+                </div>
+
+            </div>
+            <!--            <div class="swiper-pagination"></div>-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <a href="#">
+        <span class="item">
+            <img src="icons/home.png" alt="">
+            <p>首页</p>
+        </span>
+    </a>
+
+    <a href="#">
+        <span class="item">
+            <img src="icons/net.png" alt="">
+            <p>技术面试</p>
+        </span>
+    </a>
+
+    <a href="#">
+        <span class="item">
+            <img src="icons/ms.png" alt="">
+            <p>模拟面试</p>
+        </span>
+    </a>
+
+    <a href="#">
+        <span class="item">
+            <img src="icons/user.png" alt="">
+            <p>我的主页</p>
+        </span>
+    </a>
+
+</footer>
+
+<!--script写在body里面，原因不详，可以留作一个问题，以后研究
+html是从上往下执行的，如果先引入，执行时，有些变量可能还没有生成
+-->
+<!--  在swiper官网(对应版本的demo）复制需要的样式的script-->
+<!-- Initialize Swiper -->
+<!--<script>-->
+<!--  (function(){-->
+<!--    var swiper = new Swiper(".mySwiper", {-->
+<!--      slidesPerView: 3,-->
+<!--      spaceBetween: 30,-->
+<!--      pagination: {-->
+<!--        el: ".swiper-pagination",-->
+<!--        clickable: true,-->
+<!--      },-->
+<!--    });-->
+<!--  })();-->
+<!--</script>-->
+</section>
+</body>
+</html>
